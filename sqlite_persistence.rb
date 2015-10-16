@@ -35,6 +35,7 @@ end
       object_relational_mapper dataset
   end
 
+# Perform ORM function
 private
   def object_relational_mapper dataset
     books = []
