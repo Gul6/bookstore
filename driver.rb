@@ -8,11 +8,11 @@ data_source = SQLitePersistence.new (ARGV[0])
 data_source.loadData
 
 commands = [
-	AuthorSearchCommand.new(data_source),  
-	ISBNSearchCommand.new(data_source),
-	UpdateBookCommand.new(data_source),
-	QuitCommand.new(data_source)
-]	
+  ISBNSearchCommand.new(data_source),
+  UpdateBookCommand.new(data_source),
+  AuthorSearchCommand.new(data_source),  
+  QuitCommand.new(data_source)
+] 	
 last_command = commands.size() -1
 
 quit = false
