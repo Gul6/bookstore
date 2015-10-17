@@ -8,11 +8,19 @@ data_source = SQLitePersistence.new (ARGV[0])
 data_source.loadData
 
 commands = [
+<<<<<<< HEAD
 	QuitCommand.new(data_source),
 	ISBNSearchCommand.new(data_source),
 	AuthorSearchCommand.new(data_source),
 	UpdateBookCommand.new(data_source)
 ]	
+=======
+  ISBNSearchCommand.new(data_source),
+  UpdateBookCommand.new(data_source),
+  AuthorSearchCommand.new(data_source),  
+  QuitCommand.new(data_source)
+] 	
+>>>>>>> branch2
 last_command = commands.size() -1
 
 quit = false
